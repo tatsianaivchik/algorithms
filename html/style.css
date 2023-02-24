@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    background-color: antiquewhite;
+    font-family: "Comic Sans MS";
+}
+
+h3.h3header {
+    color: midnightblue;
+}
+
+h1 {
+    color: saddlebrown;
+}
+
+div.instructions {
+    color:maroon;
+}
+
+div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    background-color: navajowhite;
+}
+
+span.ingridients_line {
+    text-align: left;
+}
+
+div.ingridients {
+    background-image: url(pasta.jpg);
+    color: midnightblue;
+}
+
+div#header {
+    background-color: navajowhite;
+    font-size: 16px;
+    text-align: center;
+}
+
