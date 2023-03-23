@@ -28,6 +28,8 @@ def verify_all_chars_unique(s):
             return False
     return True
 
+    # return len(set(s)) == len(s) <- 
+
 s1 = 'abcde'
 s2 = 'aabcde'
 print(verify_all_chars_unique(s2))
