@@ -30,19 +30,22 @@ print(arithmetical_mean(arr1))
 # Example: [198, 3, 4, 9, 10, 9, 2], Return: 2, 3
 
 def find_two_lowest_nums(arr):
-    lowest1 = arr[0]
-    lowest2 = arr[1]
-    if lowest1 > lowest2:
-        lowest1, lowest2 = lowest2, lowest1
+    # lowest1 = arr[0]
+    # lowest2 = arr[1]
+    # if lowest1 > lowest2:
+    #     lowest1, lowest2 = lowest2, lowest1
+    #
+    # for i in range(2, len(arr)):
+    #     if arr[i] < lowest1:
+    #         lowest2 = lowest1
+    #         lowest1 = arr[i]
+    #     elif arr[i] < lowest2:
+    #         lowest2 = arr[i]
+    #
+    # return lowest1, lowest2
 
-    for i in range(2, len(arr)):
-        if arr[i] < lowest1:
-            lowest2 = lowest1
-            lowest1 = arr[i]
-        elif arr[i] < lowest2:
-            lowest2 = arr[i]
-
-    return lowest1, lowest2
+    arr.sort()
+    return arr[:2]
 
 arr2 = [198, 3, 4, 9, 10, 9, 2]
 print(find_two_lowest_nums(arr2))

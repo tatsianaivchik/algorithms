@@ -5,17 +5,17 @@
 # You cannot use sets for this coding challenge.
 
 def delete_duplicates(arr):
-    write_index = 1
+    last_index = 1
 
     for i in range(1, len(arr)):
-        if arr[write_index - 1] != arr[i]:
-            arr[write_index] = arr[i]
-            write_index += 1
+        if arr[last_index - 1] != arr[i]:
+            arr[last_index] = arr[i]
+            last_index += 1
 
-    for i in range(write_index, len(arr)):
+    for i in range(last_index, len(arr)):
         arr[i] = 0
     print(arr)
-    return write_index
+    return last_index
 
 test_list = [2, 5, 5, 6, 7, 7, 7, 9, 10]
 test_result = delete_duplicates(test_list)
