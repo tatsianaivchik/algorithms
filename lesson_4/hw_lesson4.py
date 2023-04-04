@@ -45,5 +45,7 @@ def plus_one(digits):
 #
 digits_test = [1, 2, 9]
 digits_test2 = [1, 8, 9, 1]
+digits_test3 = [9, 9, 9]
 print(plus_one(digits_test))
 print(plus_one(digits_test2))
+print(plus_one(digits_test3))
