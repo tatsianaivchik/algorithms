@@ -4,6 +4,8 @@ def merge_sort(arr):
 
     middle = len(arr) // 2
     return merge_arrays(merge_sort(arr[:middle]), merge_sort(arr[middle:]))
+
+
 def merge_arrays(left_arr, right_arr):
     merge_list = []
     i = j = 0
